@@ -1,0 +1,175 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background: radial-gradient(circle, rgba(112, 112, 112, 1) 17%, rgba(145, 145, 145, 1) 97%);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #fff;
+    line-height: 1.6;
+}
+
+
+nav {
+    height: 80px;
+    background: radial-gradient(circle, rgba(87, 87, 87, 1) 17%, rgba(117, 117, 117, 1) 97%);
+}
+
+
+.intro {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+    gap: 20px;
+    text-align: center;
+}
+
+
+.utstyr-liste {
+       
+    max-width: 800px;        
+    min-width: 300px;        
+    border-radius: 20px;
+    background-color: rgb(85, 84, 84);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;                
+    padding: 2rem;             
+    margin: 3rem auto;        
+}
+
+.utstyr-liste h2 {
+    font-size: 1.5rem;       
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+.utstyr-liste ul {
+    list-style-type: disc;
+    padding-left: 0;
+}
+
+.utstyr-liste ul li {
+    font-size: 1rem;         
+    color: #f5f5f5;
+    margin-bottom: 0.5rem;
+}
+
+
+.steps {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    padding-bottom: 100px;
+}
+
+
+.steg1, .steg2, .steg3, .steg4, .steg5, .steg6, .steg7, .steg8, .steg9, .steg10 {
+    max-width: 900px;
+    border-radius: 20px;
+    background-color: rgb(85, 84, 84);
+    min-height: 500px;
+    min-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px
+}
+
+
+.steps h2 {
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+.steps h3 {
+    font-size: 1rem;
+    font-weight: normal;
+    color: #f5f5f5;
+    max-width: 800px;
+}
+
+/* Bilder */
+.steps img {
+    width: 100%;
+    min-width: 500px;
+    min-height: 300px;
+    max-width: 600px;
+    max-height: 300px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px black;
+
+}
+
+@media (max-width: 1024px) {
+    .steps, .intro, .utstyr-liste {
+        width: 95%;
+    }
+
+    .steps h2, .utstyr-liste h2 {
+        font-size: 1.3rem;
+    }
+
+    .steps h3, .utstyr-liste ul li {
+        font-size: 0.9rem;
+    }
+
+    .steps img {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        height: 60px;
+    }
+
+    .steps, .intro, .utstyr-liste {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .steps h2, .utstyr-liste h2 {
+        font-size: 1.1rem;
+    }
+
+    .steps h3, .utstyr-liste ul li {
+        font-size: 0.8rem;
+    }
+
+    .steps img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .steg1, .steg2, .steg3, .steg4, .steg5, .steg6, .steg7, .steg8, .steg9, .steg10, .utstyr-liste {
+        min-width: auto;
+        min-height: auto;
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .steps h2, .utstyr-liste h2 {
+        font-size: 1rem;
+    }
+
+    .steps h3, .utstyr-liste ul li {
+        font-size: 0.75rem;
+    }
+
+    .steps img {
+        max-width: 100%;
+        height: auto;
+    }
+}
